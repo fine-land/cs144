@@ -30,7 +30,7 @@ void get_URL( const string& host, const string& path )
     ts.read(temp);
     page.emplace_back(temp);
   }
-    for(const auto& i : page){
+    for( const auto& i : page ){
       std::cout << i;
     }
 

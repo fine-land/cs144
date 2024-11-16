@@ -17,7 +17,7 @@ void Writer::push( string data )
   // Your code here.
   //Dont forget to update members
 
-  if(is_closed() || data.empty()) return;
+  if( is_closed() || data.empty() ) return;
 
   if(data.size() > available_capacity()) {
      data.resize(available_capacity());
